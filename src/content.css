@@ -74,6 +74,9 @@
   height: 24px;
   width: 24px;
   cursor: pointer;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
 }
 
 #extension-body {
