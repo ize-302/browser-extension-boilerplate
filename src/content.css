@@ -23,8 +23,7 @@
   src: url("chrome-extension://__MSG_@@extension_id__/assets/Inter-Bold.ttf");
 }
 
-#extension-app * {
-  display: block;
+#extension-app {
   position: fixed;
   border: none;
   top: 0;
@@ -63,8 +62,23 @@
   border: 1px solid #35373e;
 }
 
+#extension-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+#extension-close {
+  display: grid;
+  place-content: center;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
 #extension-body {
   all: initial;
   height: 100%;
   color: #f1f1f1;
+  position: relative;
 }

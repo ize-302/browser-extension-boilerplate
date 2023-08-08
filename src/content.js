@@ -9,6 +9,9 @@ $(document).ready(() => {
     container.appendChild(shadowRoot)
     shadowRoot.innerHTML = data
     document.body.appendChild(container);
+    // close button
+    const closeButton = shadowRoot.querySelector('#extension-app #extension-close img')
+    closeButton.setAttribute("src", chrome.runtime.getURL("assets/close.svg"))
     // style
     const styleElem = document.createElement('style')
     const styleLinkEl = document.createElement("link");
@@ -34,6 +37,11 @@ $(document).ready(() => {
     // close extension when overlay is clicked
     const overlay = shadowRoot.querySelector('#extension-app > #extension-overlay')
     overlay.addEventListener('click', function () {
+      openExtension(false)
+    })
+
+    // close extension when x is clicked
+    closeButton.addEventListener('click', function () {
       openExtension(false)
     })
 
