@@ -38,7 +38,6 @@
   font-weight: 300;
   line-height: normal;
   font-size: 14px;
-  color: #f1f1f1;
 }
 
 #extension-overlay {
@@ -67,4 +66,5 @@
 #extension-body {
   all: initial;
   height: 100%;
+  color: #f1f1f1;
 }
